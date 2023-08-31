@@ -1,0 +1,123 @@
+:root{
+    --white: hsl(0, 0%, 100%);
+    --chess: hsl(219, 85%, 26%);
+    --text: hsl(219, 14%, 63%);
+    --unread: hsl(210, 60%, 98%);
+    --name: hsl(224, 21%, 14%);
+    --highlight: hsl(219, 12%, 42%);
+    --border: hsl(219, 14%, 63%);
+
+}
+html{
+    font-size: 16px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.container{
+    background-color: var(--white);
+    padding: 20px;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;    
+    align-items: center;
+}
+
+#nav__title{
+    font-weight: 800;
+    font-size: 25px;
+}
+
+#nav__three{
+    font-weight: 800;
+    font-size: 20px;
+    padding: 1px 10px;
+    color: var(--white);
+    background-color: var(--chess);
+    border-radius: 5px;
+}
+
+.nav__left{
+    display: flex;
+    gap:10px;
+}
+
+.nav__right{
+    color: var(--text);
+    font-weight: 500;
+}
+
+
+.notification{
+    margin-top: 30px;
+}
+
+.unread, .read{
+    display: flex;
+    align-items: flex-start;
+    padding: 10px;
+    gap: 10px;
+}
+
+.unread{
+    border-radius: 10px;
+    background-color: var(--unread);
+}
+
+.dot{
+    color: red;
+    display: inline-block;
+    border-radius: 50%;
+    height: 10px;
+    width: 10px;
+    background-color: red;
+}
+
+img{
+    height: 50px;
+}
+
+.notification__name{
+    font-weight: 800;
+    color: var(--name);
+}
+
+.notification{
+    font-weight: 500;
+    color: var(--text);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.chess{
+    color: var(--chess);
+    font-weight: 800;
+}
+
+.highlight{
+    color: var(--highlight);
+    font-weight: 800;
+}
+
+.message{
+    margin-top: 20px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.kim{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
